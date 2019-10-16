@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/glass_card_body_height"
+        android:layout_marginLeft="@dimen/glass_card_margin"
+        android:layout_marginTop="@dimen/glass_card_margin"
+        android:layout_marginRight="@dimen/glass_card_margin"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello " />
+
+    </RelativeLayout>
+
+</FrameLayout>
