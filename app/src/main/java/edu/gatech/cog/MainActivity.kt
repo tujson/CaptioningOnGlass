@@ -66,6 +66,12 @@ class MainActivity : Activity() {
         speechRecognizer?.startListening("digits")
     }
 
+    override fun onPause() {
+        super.onPause()
+        speechRecognizer?.cancel()
+        speechRecognizer?.shutdown()
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         speechRecognizer?.cancel()
