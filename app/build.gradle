@@ -9,6 +9,7 @@ android {
         applicationId "edu.gatech.cog"
         minSdkVersion 19
         targetSdkVersion 29
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
     }
@@ -18,11 +19,31 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/INDEX.LIST'
+    }
 }
 
 dependencies {
+    def multidex_version = "2.0.1"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':aars')
-    implementation project(':models')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    // add these dependencies for the speech client
+    implementation 'io.grpc:grpc-okhttp:1.24.1'
+    implementation 'com.google.cloud:google-cloud-speech:1.13.0'
 }
+
+task copySecretKey(type: Copy) {
+    def File secretKey = file "$System.env.GOOGLE_APPLICATION_CREDENTIALS"
+    from secretKey.getParent()
+    include secretKey.getName()
+    into 'src/main/res/raw'
+    rename secretKey.getName(), "credential.json"
+}
+preBuild.dependsOn(copySecretKey)
