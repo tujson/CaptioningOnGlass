@@ -2,4 +2,5 @@
 https://cog.gatech.edu
 
 Implementation of Captioning on Glass.  
-Uses messaging service to emulate speech-to-text.
+Uses Azure Cognitive Services.  
+Works on Glass XE, Glass EE2, and Android.
