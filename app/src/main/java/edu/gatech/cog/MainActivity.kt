@@ -1,112 +1,80 @@
 package edu.gatech.cog
 
-import android.app.Activity
-import android.media.AudioFormat
-import android.media.AudioRecord
-import android.media.MediaRecorder
+import android.Manifest
+import android.content.pm.PackageManager
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.google.api.gax.rpc.*
-import com.google.auth.oauth2.GoogleCredentials
-import com.google.cloud.speech.v1.*
-import com.google.protobuf.ByteString
-import java.util.concurrent.atomic.AtomicBoolean
+import android.view.WindowManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.microsoft.cognitiveservices.speech.SpeechConfig
+import com.microsoft.cognitiveservices.speech.SpeechRecognizer
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.concurrent.thread
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
-    private val samplingRate = 44100
-    private val bufferSize = AudioRecord.getMinBufferSize(
-            samplingRate, AudioFormat.CHANNEL_IN_MONO,
-            AudioFormat.ENCODING_PCM_16BIT
-    )
-    private val recorder = AudioRecord(
-            MediaRecorder.AudioSource.MIC, samplingRate,
-            AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize
-    )
-    private var audioData: ByteArray = ByteArray(bufferSize)
-    private var isRecording = false
-    private var recordingThread: Thread? = null
-    private val isFirstRequest = AtomicBoolean(true)
+    private val TAG = "MainActivity"
+    private val speechSubscriptionKey = ""
+    private val serviceRegion = ""
+    private var speechRecognizer: SpeechRecognizer? = null
 
-    private val speechClient by lazy {
-        // NOTE: The line below uses an embedded credential (res/raw/sa.json).
-        //       You should not package a credential with real application.
-        //       Instead, you should get a credential securely from a server.
-        applicationContext.resources.openRawResource(R.raw.credential).use {
-            SpeechClient.create(SpeechSettings.newBuilder()
-                    .setCredentialsProvider { GoogleCredentials.fromStream(it) }
-                    .build())
-        }
-    }
-    private lateinit var requestStream: ClientStream<StreamingRecognizeRequest>
+    private lateinit var adapter: TextAdapter
 
-    override fun onCreate(bundle: Bundle?) {
-        super.onCreate(bundle)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // start streaming the data to the server and collect responses
-        requestStream = speechClient.streamingRecognizeCallable().splitCall(object : ResponseObserver<StreamingRecognizeResponse> {
-            override fun onComplete() {
-                Log.v("MainActivity", "speechClient: onComplete")
+        if (ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.RECORD_AUDIO
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.RECORD_AUDIO), 1)
+        }
 
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
+        val content = mutableListOf<String>()
+        adapter = TextAdapter(content)
+        rvText.adapter = adapter
+        val layoutManager = LinearLayoutManager(this)
+        layoutManager.stackFromEnd = true
+        rvText.layoutManager = layoutManager
+
+        thread {
+            val config = SpeechConfig.fromSubscription(speechSubscriptionKey, serviceRegion)
+            speechRecognizer = SpeechRecognizer(config)
+            speechRecognizer?.startContinuousRecognitionAsync()
+            speechRecognizer?.recognizing?.addEventListener { _, speechRecognitionEventArgs ->
+                Log.v(TAG, "Recognizing: ${speechRecognitionEventArgs.result.text}")
+                runOnUiThread {
+                    tvText.text = speechRecognitionEventArgs.result.text
+                }
             }
+            speechRecognizer?.recognized?.addEventListener { _, speechRecognitionEventArgs ->
+                Log.v(TAG, "Recognized: ${speechRecognitionEventArgs.result.text}")
+                content.add(speechRecognitionEventArgs.result.text)
+                runOnUiThread {
+                    tvText.text = ""
+                    adapter.notifyItemInserted(content.size)
+                    rvText.scrollToPosition(content.size - 1)
 
-            override fun onResponse(response: StreamingRecognizeResponse?) {
-                Log.v("MainActivity", "speechClient: " + response?.getResults(0)?.getAlternatives(0)?.transcript)
+                    Log.v(TAG, "Transcript: $content")
+                }
             }
+        }
+    }
 
-            override fun onError(t: Throwable?) {
-                Log.e("MainActivity", "speechClient", t)
-            }
-
-            override fun onStart(controller: StreamController?) {
-                Log.v("MainActivity", "speechClient: onStart")
-            }
-
-        })
-
-        startRecording()
+    override fun onResume() {
+        super.onResume()
+        speechRecognizer?.startContinuousRecognitionAsync()
     }
 
     override fun onPause() {
         super.onPause()
-        recordingThread?.interrupt()
-    }
-
-    private fun startRecording() {
-        isRecording = true
-        recorder.startRecording()
-
-        recordingThread = Thread(Runnable {
-            while (isRecording) {
-                recorder.read(audioData, 0, bufferSize)
-
-                process(audioData)
-
-//                Thread.sleep(250)
-            }
-        })
-        recordingThread?.start()
-    }
-
-    private fun process(byteArray: ByteArray) {
-        val builder = StreamingRecognizeRequest.newBuilder()
-                .setAudioContent(ByteString.copyFrom(byteArray))
-
-        // if first time, include the config
-        if (isFirstRequest.getAndSet(false)) {
-            builder.streamingConfig = StreamingRecognitionConfig.newBuilder()
-                    .setConfig(RecognitionConfig.newBuilder()
-                            .setLanguageCode("en-US")
-                            .setEncoding(RecognitionConfig.AudioEncoding.LINEAR16)
-                            .setSampleRateHertz(16000)
-                            .build())
-                    .setInterimResults(false)
-                    .setSingleUtterance(false)
-                    .build()
-        }
-
-        // send the next request
-        requestStream.send(builder.build())
+        speechRecognizer?.close()
     }
 }

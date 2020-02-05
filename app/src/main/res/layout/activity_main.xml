@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/body_layout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvText"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/glass_card_body_height"
-        android:layout_marginLeft="@dimen/glass_card_margin"
-        android:layout_marginTop="@dimen/glass_card_margin"
-        android:layout_marginRight="@dimen/glass_card_margin"
-        tools:ignore="UselessLeaf">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvText"
+        android:layout_alignParentTop="true" />
 
-        <TextView
-            android:id="@+id/tvText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello " />
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
 
-    </RelativeLayout>
-
-</FrameLayout>
+</RelativeLayout>
