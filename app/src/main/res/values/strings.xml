@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">azuretest</string>
+    <string name="app_name">Captioning on Glass</string>
+    <string name="voice_trigger">Captioning</string>
 </resources>
