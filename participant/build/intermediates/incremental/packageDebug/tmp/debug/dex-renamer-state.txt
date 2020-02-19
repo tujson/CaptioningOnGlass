@@ -1,0 +1,7 @@
+#Thu Feb 06 18:42:49 EST 2020
+base.0=/home/jason/Documents/CaptioningOnGlass/participant/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/jason/Documents/CaptioningOnGlass/participant/build/intermediates/dex/debug/mergeDexDebug/out/classes2.dex

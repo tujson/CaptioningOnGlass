@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/nav_graph.xml","javaFiles":["edu.gatech.cog.researcher.fragments.SetupFragmentDirections","edu.gatech.cog.researcher.fragments.StudyFragmentDirections","edu.gatech.cog.researcher.fragments.StudyFragmentArgs","edu.gatech.cog.researcher.fragments.ResultsFragmentArgs"]}]

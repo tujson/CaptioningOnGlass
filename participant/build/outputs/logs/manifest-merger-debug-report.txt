@@ -1,0 +1,197 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0c9800d9f369c669967b1169cc5526ba/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/4db5698c6311b0ebdc8e4840ab9b394c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/e565cfc85849a579668ab34b3c82198c/core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jason/.gradle/caches/transforms-2/files-2.1/fbec0dc6159501752653bed97b6de32d/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9db9f98daee9786d974ada6a075c1876/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d098f8d1bd418ab9c0bcaf77f6297eb7/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/b472793fc80b45112b8d4148321b08e0/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/efa167336c6384361622e32e34ee6786/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c46ee121e82a11fff0ee56a05b31a73a/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d11759926b17ec39d8425bda95365a59/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/dea8d4a693df2e79c7d7eaa5905db207/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/5a02b1f45e87b4dbbbe1f9d684bc214c/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/6746dc484d07d339bbd5dfa424289915/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/a1f5e9ae78ed85dd436f5a20f04849e8/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c337cc08204cc7a31846086a8bd4d9ab/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/2adf17e80fe307279267c1a8c91de1b1/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9b312a2c65e4f91fe974170345c6ac2c/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/154f3b57758bd41e10283baea1ae4353/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/bdbfedce3133b61c5430e586736214ce/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/ef9f89f79a3cecbf7d09c010162a2b77/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/523c017ad246270cd2e8a0cbcb9709d9/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/35bb9e4bc8ac9be3154bd217d76d7258/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0b37d119b95179cb545fa337ec862e7a/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.conscrypt:conscrypt-android:2.2.1] /home/jason/.gradle/caches/transforms-2/files-2.1/33798e3d02038d0adbaec9c395f4981a/jetified-conscrypt-android-2.2.1/AndroidManifest.xml:2:1-13:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:4:5-41
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:6:22-64
+uses-permission#com.google.android.glass.permission.DEVELOPMENT
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:7:5-87
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:7:22-84
+application
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:9:5-33:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jason/.gradle/caches/transforms-2/files-2.1/fbec0dc6159501752653bed97b6de32d/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jason/.gradle/caches/transforms-2/files-2.1/fbec0dc6159501752653bed97b6de32d/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:13:5-19:19
+MERGED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:13:5-19:19
+MERGED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/2adf17e80fe307279267c1a8c91de1b1/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/2adf17e80fe307279267c1a8c91de1b1/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [org.conscrypt:conscrypt-android:2.2.1] /home/jason/.gradle/caches/transforms-2/files-2.1/33798e3d02038d0adbaec9c395f4981a/jetified-conscrypt-android-2.2.1/AndroidManifest.xml:11:5-20
+MERGED from [org.conscrypt:conscrypt-android:2.2.1] /home/jason/.gradle/caches/transforms-2/files-2.1/33798e3d02038d0adbaec9c395f4981a/jetified-conscrypt-android-2.2.1/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:12:9-41
+	tools:ignore
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:16:9-48
+	android:roundIcon
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:15:9-76
+activity#edu.gatech.cog.participant.MainActivity
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:17:9-32:20
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:com.google.android.glass.category.DIRECTORY
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:18:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:21:27-74
+category#com.google.android.glass.category.DIRECTORY
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:22:17-88
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:22:27-85
+intent-filter#action:name:com.google.android.glass.action.VOICE_TRIGGER
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:25:13-27:29
+action#com.google.android.glass.action.VOICE_TRIGGER
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:26:17-88
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:26:25-85
+meta-data#com.google.android.glass.VoiceTrigger
+ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:29:13-31:57
+	android:resource
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:31:17-54
+	android:name
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml:30:17-69
+uses-sdk
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0c9800d9f369c669967b1169cc5526ba/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0c9800d9f369c669967b1169cc5526ba/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/4db5698c6311b0ebdc8e4840ab9b394c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/4db5698c6311b0ebdc8e4840ab9b394c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/e565cfc85849a579668ab34b3c82198c/core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/e565cfc85849a579668ab34b3c82198c/core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jason/.gradle/caches/transforms-2/files-2.1/fbec0dc6159501752653bed97b6de32d/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jason/.gradle/caches/transforms-2/files-2.1/fbec0dc6159501752653bed97b6de32d/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9db9f98daee9786d974ada6a075c1876/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9db9f98daee9786d974ada6a075c1876/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:7:5-9:41
+MERGED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d098f8d1bd418ab9c0bcaf77f6297eb7/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d098f8d1bd418ab9c0bcaf77f6297eb7/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/b472793fc80b45112b8d4148321b08e0/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/b472793fc80b45112b8d4148321b08e0/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/efa167336c6384361622e32e34ee6786/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/efa167336c6384361622e32e34ee6786/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c46ee121e82a11fff0ee56a05b31a73a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c46ee121e82a11fff0ee56a05b31a73a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d11759926b17ec39d8425bda95365a59/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/d11759926b17ec39d8425bda95365a59/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/dea8d4a693df2e79c7d7eaa5905db207/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/dea8d4a693df2e79c7d7eaa5905db207/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/5a02b1f45e87b4dbbbe1f9d684bc214c/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/5a02b1f45e87b4dbbbe1f9d684bc214c/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/6746dc484d07d339bbd5dfa424289915/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/6746dc484d07d339bbd5dfa424289915/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/a1f5e9ae78ed85dd436f5a20f04849e8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/a1f5e9ae78ed85dd436f5a20f04849e8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/8691af06402d797a2ad30abda6c154a1/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c337cc08204cc7a31846086a8bd4d9ab/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/c337cc08204cc7a31846086a8bd4d9ab/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/2adf17e80fe307279267c1a8c91de1b1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/2adf17e80fe307279267c1a8c91de1b1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9b312a2c65e4f91fe974170345c6ac2c/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/9b312a2c65e4f91fe974170345c6ac2c/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/154f3b57758bd41e10283baea1ae4353/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jason/.gradle/caches/transforms-2/files-2.1/154f3b57758bd41e10283baea1ae4353/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/bdbfedce3133b61c5430e586736214ce/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/bdbfedce3133b61c5430e586736214ce/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/ef9f89f79a3cecbf7d09c010162a2b77/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/ef9f89f79a3cecbf7d09c010162a2b77/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/523c017ad246270cd2e8a0cbcb9709d9/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/523c017ad246270cd2e8a0cbcb9709d9/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/35bb9e4bc8ac9be3154bd217d76d7258/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/35bb9e4bc8ac9be3154bd217d76d7258/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0b37d119b95179cb545fa337ec862e7a/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jason/.gradle/caches/transforms-2/files-2.1/0b37d119b95179cb545fa337ec862e7a/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.conscrypt:conscrypt-android:2.2.1] /home/jason/.gradle/caches/transforms-2/files-2.1/33798e3d02038d0adbaec9c395f4981a/jetified-conscrypt-android-2.2.1/AndroidManifest.xml:7:5-9:41
+MERGED from [org.conscrypt:conscrypt-android:2.2.1] /home/jason/.gradle/caches/transforms-2/files-2.1/33798e3d02038d0adbaec9c395f4981a/jetified-conscrypt-android-2.2.1/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		ADDED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+		INJECTED from /home/jason/Documents/CaptioningOnGlass/participant/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:11:22-76
+provider#com.sendbird.android.SendBirdInitProvider
+ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:14:9-18:39
+	android:authorities
+		ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:16:13-72
+	android:exported
+		ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:17:13-37
+	android:initOrder
+		ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:18:13-36
+	android:name
+		ADDED from [com.sendbird.sdk:sendbird-android-sdk:3.0.117] /home/jason/.gradle/caches/transforms-2/files-2.1/969c677a74785f98a13cf023f32eb3da/sendbird-android-sdk-3.0.117/AndroidManifest.xml:15:13-69
