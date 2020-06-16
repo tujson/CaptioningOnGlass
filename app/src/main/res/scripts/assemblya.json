@@ -1,1 +1,34 @@
-Step 1, Blue Block
+{
+  "script": [
+    {
+      "text": "Step 1, yellow rectangle."
+    },
+    {
+      "text": "Step 2, orange rectangle."
+    },
+    {
+      "text": "Step 3, red square."
+    },
+    {
+      "text": "Step 4, green square."
+    },
+    {
+      "text": "Step 5, green rectangle."
+    }
+    {
+      "text": "Step 6, green square."
+    },
+    {
+      "text": "Step 7, yellow rectangle."
+    },
+    {
+      "text": "Step 8, orange square."
+    },
+    {
+      "text": "Step 9, yellow square."
+    },
+    {
+      "text": "Step 10, yellow square."
+    }
+  ]
+}
